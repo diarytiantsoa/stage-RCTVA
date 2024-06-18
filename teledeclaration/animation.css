@@ -1,0 +1,16 @@
+div {position: absolute;}
+
+#container div {
+  background-color: lightblue;
+  border: 1px solid #333333;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+div#myBox {
+  opacity: 1;
+  background-color: coral;
+  z-index: 1;
+  -webkit-animation: mymove 200s infinite linear; 
+}

@@ -1,0 +1,175 @@
+/* Styles généraux */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.picturebox1 {
+  margin-top:10px;
+  margin-left: 10px;
+  width: 50px;
+  height: 70px;
+  flex-shrink: 0;
+  background: url("../Assets/logo_mfbdgi (1).jpg")  #0C2218 50% / cover no-repeat;
+  
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.titre {
+  margin-left: -15px;
+  margin-top: -10px;
+  flex-shrink: 1;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  background-color: #198754;
+  width: 100vh !important;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+.h1{
+  font-size:10px !important;
+}
+.header {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 120px;
+  height: 80px;
+  flex-shrink: 0;
+
+  
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+  margin-right: -20px; /* Ajuste l'espacement du logo vers la gauche */
+}
+
+/* Styles pour le titre */
+.text-container {
+  margin-top: -75px;
+}
+
+.text-container p {
+  color: #020f1b;
+}
+
+.typing-content {
+  font-family: poppins thin;
+  margin-left:50px;
+  margin-top:150px;
+  height: 100%;
+  color: aliceblue;
+}
+
+.typing-content1 {
+  font-family: poppins thin;
+  margin-left:50px;
+  margin-top:150px;
+  height: 100%;
+  color: aliceblue;
+}
+.curved-divider {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
+  background-color: #fff; /* Couleur de la séparation */
+  z-index: 1; /* Pour placer la courbe au-dessus du contenu */
+}
+
+.left-section,
+.right-section {
+  position: relative;
+  z-index: 2; /* Pour placer le contenu au-dessus de la courbe */
+}
+
+/* Styles pour le texte et le point de frappe */
+#typing-text::after {
+  content: '|';
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Styles pour le contenu de la droite */
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  color: black;
+  padding: 20px;
+}
+
+/* Styles pour les images */
+.images-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+  margin-top: 50px; /* Ajustement de l'espacement depuis le haut */
+}
+
+.image-with-caption {
+  text-align: center;
+  margin: 20px; /* Espacement entre les images */
+  border: 2px solid #ccc; /* Bordure de 2 pixels avec une couleur grise */
+  border-radius: 8px; /* Coins arrondis */
+  overflow: hidden; /* Cache tout élément débordant de la bordure */
+  transition: border-color 0.3s ease; /* Transition pour l'effet de changement de couleur de bordure */
+}
+
+.image-with-caption img {
+  max-width: 1000px; /* Ajustement de la largeur des images */
+  height: auto;
+}
+
+.image-with-caption p {
+  font-size: 14px;
+  margin: 5px 0;
+  font-weight: bold;
+  margin-top: 15px; /* Ajustement de l'espacement du texte sous les images */
+}
+
+/* CSS pour les animations au survol des images */
+.image-link {
+  transition: transform 0.3s ease-in-out; /* Transition pour l'effet de transformation */
+}
+
+.image-link:hover {
+  transform: scale(1.1); /* Par exemple, agrandit l'image de 10% au survol */
+}
+
+/* Style pour le point de frappe */
+.cursor {
+  position: absolute;
+  color: red; /* Couleur du point */
+  font-size: 24px; /* Taille du point */
+  animation: blink 0.7s infinite;
+}
+

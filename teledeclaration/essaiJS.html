@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head><title>Equation à second degré</title></head>
+<body>
+    <script type="text/javascript">
+    var a = prompt("Entrer le premier coefficient");
+    var b = prompt("Entrer le second coefficient");
+    var c = prompt("Entrer le troisième coefficient");
+    delta = ((b*b) -(4*a*c));
+    if (delta==0){
+        var x = -b/2*a;
+        alert("Delta=" +delta);
+        alert("Alors la solution est + "+x);
+    }
+    else if(delta >0) {
+        var x1=-b -Math.sqrt (delta)/2*a;
+        var x2=-b +Math.sqrt(delta)/2*a;
+        alert("Delta=" +delta);
+        alert("Les solutions de l'équations sont: x1+"+x1+"et x2 + "+x2);
+
+    }
+    else{
+        alert("Delta="+ delta);
+        alert("Il n'y a pas de solution");
+    }
+    
+</script>
+</body>
+</html>

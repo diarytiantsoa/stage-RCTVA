@@ -1,0 +1,50 @@
+ecrire (" Comment vous appelez-vous"); lire(nom);
+ecrire("Bonjour"&nom&"!);
+
+procedure bonjour1
+nom:chaine;
+debproc
+ erire("Comment vous appelez-vous?");lire("nom");
+ecrire("Bonjour"&nom&"!);
+finproc;
+
+procedure bonjour2
+nom:chaine;
+entier:annee,naissance;
+debproc
+ecrire("A quelle annee sommes-nous?"); lire(annee);
+ecrire("Comment vous appelez-vous?); lire(nom);
+ecrire("Votre annee de naissance?); lire(naissance);
+ecrire("Bonjour"&nom&"!");
+ecrire("Vous etes age de"&annee-naisssance&"ans");
+finproc;
+
+procedure bonjour3
+nom:chaine;(d annee:entier)
+entier:naissance, age;
+debproc
+ecrire("Comment vous appelez-vous?"); lire(nom);
+ecrire("votre annee de naissance?");lire(naissance);
+ecrire("Bonjour"&nom&"!")
+age:=annee-naissance;
+ecrire("vous ets age de"&age&"ans")
+finproc;
+
+exercice2
+procedure fonction exercice
+x,y,z:entier;
+debproc
+x:=7;
+z:=x;
+x:=(3+z)div2;
+y:=(x+5);
+finproc;
+
+procedure etudiant2( entier:d annee)
+nom:chaine; naissance, age, nbetudiant,i:entier;
+debproc
+ecrire("Combien d'etudiant avez-vous?); lire(nbetudiant);
+i:=1
+tant que i<nbetuduants faire
+ecrre("nom d'un etudiant");lire(nom);
+ecrire("son annee de naissance")
